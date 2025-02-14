@@ -15,7 +15,7 @@ const RestaurantProvider = ({ children }) => {
         const fetchRestaurants = async () => {
             try {
                 const response = await axios.get(
-                    "http://192.168.1.200:3001/restaurants"
+                    "localhost:3001/restaurants"
                 );
                 setRestaurants(response.data);
             } catch (error) {
